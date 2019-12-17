@@ -1,0 +1,28 @@
+.page {
+  background-image: url('~assets/img/chalkboard.jpg');
+  font-family: Roboto, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 1px;
+  height: 100vh;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

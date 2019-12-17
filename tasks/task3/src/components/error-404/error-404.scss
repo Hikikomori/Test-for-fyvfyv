@@ -1,0 +1,32 @@
+.error-404 {
+  width: 100%;
+}
+
+.error-404__heading {
+  margin-top: 5px;
+}
+
+.error-404__return {
+  display: flex;
+  align-items: center;
+
+  margin-top: 40px;
+
+  text-decoration: none;
+
+  color: #243966;
+
+  &:hover {
+    text-decoration: underline;
+
+    .book-page__return-icon {
+      opacity: .5;
+    }
+  }
+}
+
+.error-404__return-icon {
+  margin-right: 10px;
+
+  fill: #243966;
+}

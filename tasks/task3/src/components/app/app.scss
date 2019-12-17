@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 1200px;
+  margin: 30px auto;
+  padding: 20px 30px;
+
+  border-radius: 15px;
+  background-image: url('~assets/img/dust_scratches.png');
+  box-shadow: 0 15px 46px -7px rgba(255,255,255,.5);
+}

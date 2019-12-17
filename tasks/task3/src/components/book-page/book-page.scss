@@ -1,0 +1,191 @@
+.book-page__return {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  color: #243966;
+
+  &:hover {
+    text-decoration: underline;
+
+    .book-page__return-icon {
+      opacity: .5;
+    }
+  }
+}
+
+.book-page__return-icon {
+  margin-right: 10px;
+
+  fill: #243966;
+}
+
+.book-page__info {
+  display: flex;
+}
+
+.book-page__image-wrap {
+  display: flex;
+  justify-content: center;
+
+  width: 400px;
+  height: 500px;
+
+  border: 10px #243966 ridge;
+  box-shadow: 0 0 50px -20px #243966;
+}
+
+.book-page__image {
+  width: auto;
+  height: 100%;
+}
+
+.book-page__about {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  margin-left: 30px;
+}
+
+.book-page__author,
+.book-page__title,
+.book-page__description {
+  width: 100%;
+}
+
+.book-page__author {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.book-page__title {
+  margin: 0;
+
+  color: #243966;
+}
+
+.book-page__description {
+  font-size: 17px;
+  line-height: 1.5;
+
+  margin-bottom: 50px;
+}
+
+.book-page__rating {
+  display: flex;
+  align-items: flex-end;
+
+  width: 40%;
+}
+
+.book-page__rating-title,
+.book-page__rating-value {
+  margin: 0;
+}
+
+.book-page__rating-title {
+  margin-right: 10px;
+}
+
+.book-page__rating-value {
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-left: 10px;
+}
+
+.book-page__rating-stars {
+  font-size: 0;
+
+  position: relative;
+
+  display: block;
+
+  width: 152px;
+  height: 25px;
+
+  &::before {
+    display: inline-block;
+
+    width: 152px;
+    height: 100%;
+
+    content: '';
+
+    background: url('~assets/img/stars.svg') transparent no-repeat center;
+    background-size: 152px 25px;
+  }
+}
+
+.book-page__rating-stars-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  overflow: hidden;
+
+  width: 0;
+  height: 100%;
+
+  &::before {
+    display: inline-block;
+
+    width: 152px;
+    height: 100%;
+
+    content: '';
+
+    background: url('~assets/img/stars-active.svg') transparent no-repeat center;
+    background-size: 152px 25px;
+  }
+}
+
+.book-page__upvote {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  width: 60%;
+}
+
+.book-page__upvote-button {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+
+  &:hover {
+    .book-page__upvote-icon {
+      opacity: .5;
+    }
+  }
+
+  &--active {
+    .book-page__upvote-icon {
+      opacity: 1;
+
+      fill: #243966;
+    }
+  }
+}
+
+.book-page__upvote-icon {
+  opacity: .3;
+}
+
+.book-page__upvote-value {
+  margin: 0;
+}
