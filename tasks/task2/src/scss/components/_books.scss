@@ -1,0 +1,33 @@
+.books {
+  background-color: #fff;
+}
+
+.books__inner {
+  padding: 90px $padding-desktop;
+}
+
+.books__recommends {
+  margin-top: 93px;
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .books__inner {
+    padding: 90px $padding-tablet;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-phablet) {
+  .books__inner {
+    padding: 90px $padding-phablet;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .books__inner {
+    padding: 40px $padding-mobile;
+  }
+
+  .books__recommends {
+    margin-top: 40px;
+  }
+}

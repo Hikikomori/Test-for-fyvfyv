@@ -1,0 +1,78 @@
+.details__title {
+  font-family: 'Courier New', monospace;
+  font-size: 21px;
+  font-weight: 700;
+
+  letter-spacing: .21em;
+  text-transform: uppercase;
+
+  color: #7d88a4;
+}
+
+.details__table {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 30px;
+
+  border-collapse: collapse;
+
+  border: none;
+}
+
+.details__table-cell {
+  font-size: 18px;
+
+  width: 20%;
+
+  text-align: left;
+
+  color: #243966;
+
+  &--heading {
+    padding-bottom: 15px;
+  }
+}
+
+.details__link {
+  color: inherit;
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .details__title {
+    font-size: 18px;
+  }
+
+  .details__table-cell {
+    font-size: 16px;
+
+    &--heading {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .details__table {
+    margin-top: 10px;
+  }
+
+  .details__table-body {
+    display: flex;
+  }
+
+  .details__table-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details__table-cell {
+    width: auto;
+    padding: 10px;
+
+    &--heading {
+      &::after {
+        content: ':';
+      }
+    }
+  }
+}

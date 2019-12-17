@@ -1,0 +1,43 @@
+.main__container {
+  @include container();
+
+  padding: 0 $padding-desktop;
+}
+
+.main__inner {
+  padding: 0 $padding-desktop;
+}
+
+.main__news {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .main__container {
+    padding: 0 $padding-tablet;
+  }
+
+  .main__inner {
+    padding: 0 $padding-tablet;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-phablet) {
+  .main__container {
+    padding: 0 $padding-phablet;
+  }
+
+  .main__inner {
+    padding: 0 $padding-phablet;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .main__container {
+    padding: 0 $padding-mobile;
+  }
+
+  .main__inner {
+    padding: 0 $padding-mobile;
+  }
+}
